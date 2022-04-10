@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.cell {
+    display: inline;
+    width: 38px;
+    height: 38px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.cell:hover {
+    background-color: black;
+}
+
+#grid {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#reset {
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
