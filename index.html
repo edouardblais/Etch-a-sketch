@@ -12,8 +12,23 @@
 
     <div id="container">
         <h1>Etch-a-sketch</h1>
-        <button id="reset">Reset</button>
+        <div class="buttons">
+            <button id="reset">Reset</button>
+            <div class="box">
+                <div class="choose">Choose your color</div>
+                <input type="color" id="color">
+            </div>
+            <div class="box">
+                <div class="choose">Choose your grid resolution</div>
+                <div class="sizebuttons">
+                    <button id="size16">16</button>
+                    <button id="size32">32</button>
+                    <button id="size64">64</button>
+                </div>
+            </div>
+        </div>
         <div id="grid"></div>
+        <div id="footer">Made with love by Ed</div>
     </div>
 
     

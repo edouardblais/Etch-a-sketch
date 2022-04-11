@@ -1,19 +1,76 @@
 body, html {
     height: 100%;
     width: 100%;
+    background-color: #FFFACD;
 }
 
-.cell {
+h1 {
+    font-family: 'VT323', monospace;
+    margin:0px;
+    text-shadow: 5px 5px white;
+}
+
+input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px;
+}
+
+.sizebuttons {
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell16, .cell32, .cell64 {
     display: inline;
-    width: 38px;
-    height: 38px;
     border-style:solid;
     border-width: 1px;
     border-color: black;
 }
 
-.cell:hover {
+.cell16 {
+    width: 38px;
+    height: 38px;
+}
+
+.cell32 {
+    width: 18px;
+    height: 18px;
+}
+
+.cell64 {
+    width: 8px;
+    height: 8px;
+}
+
+.cell16:hover, .cell32:hover, .cell64:hover {
     background-color: black;
+}
+
+.buttons {
+    display: inline-flex;
+    gap: 40px;
+    color: black;
+    font-size: 18px;
+    padding:10px;
+    font-family: 'VT323', monospace;
+}
+
+.choose {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'VT323', monospace;
+    color: black;
+    text-shadow: 5px 5px white;
 }
 
 #grid {
@@ -21,18 +78,30 @@ body, html {
     height: 640px;
     display: flex;
     flex-wrap: wrap;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px;
 }
 
-#reset {
-    padding: 20px;
+#reset, #size16, #size32, #size64 {
+    padding: 15px;
     border-style: solid;
     border-color: black;
+    font-size: 18px;
+    font-family: 'VT323', monospace;
+    box-shadow: 5px 5px;
 }
 
 #container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 50px;
+    gap: 10px;
     align-items: center;
+}
+
+#footer {
+    font-family: 'VT323', monospace;
+    font-style: italic;
+    font-size: 20px;
+    color: black;
 }
